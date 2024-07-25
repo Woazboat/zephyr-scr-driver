@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: Apache-2.0
+
+config SCR_POWER_CONTROLLER_GENERIC
+	bool "SCR power controller"
+	default y
+	depends on DT_HAS_SCR_POWER_CONTROLLER_GENERIC_ENABLED
+	select GPIO
+	help
+	  Enable driver for generic SCR power controller
